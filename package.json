@@ -1,0 +1,16 @@
+{
+  "name": "pg-logical-replication-to-output",
+  "version": "1.0.0",
+  "description": "Sends all persistent changes from a PostgreSQL database received from a logical replication slot to standard output.",
+  "main": "src/index.js",
+  "author": "Robert Gebauer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobertGebauer/pg-logical-replication-to-output.git"
+  },
+  "dependencies": {
+    "minimist": "1.2.5",
+    "pg-logical-replication": "1.1.0"
+  }
+}
