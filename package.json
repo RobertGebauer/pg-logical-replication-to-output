@@ -13,7 +13,7 @@
     "url": "https://github.com/RobertGebauer/pg-logical-replication-to-output.git"
   },
   "dependencies": {
-    "minimist": "1.2.5",
+    "minimist": "^1.2.6",
     "pg-logical-replication": "1.1.0"
   }
 }
