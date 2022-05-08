@@ -6,7 +6,7 @@ class LogicalReplicationReceiver {
         this.databaseConnection = databaseConnection
         this.logicalReplicationConfig = logicalReplicationConfig
 
-        // set minimum timeout to 2000 and adjust standby message timeout of underlying replication receiver
+        // set minimum timeout to 3000 and adjust standby message timeout of underlying replication receiver
         this.logicalReplicationConfig.timeout = this.logicalReplicationConfig.timeout < 3 ? 3 : this.logicalReplicationConfig.timeout
         this.standbyMessageTimeout = this.logicalReplicationConfig.timeout - 2
     }
