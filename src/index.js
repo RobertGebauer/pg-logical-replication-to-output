@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const Config = require('./lib/Config');
 const LogicalReplicationReceiver = require('./lib/LogicalReplicationReceiver');
 

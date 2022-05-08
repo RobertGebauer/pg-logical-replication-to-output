@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Sends all persistent changes from a PostgreSQL database received from a logical replication slot to standard output.",
   "main": "src/index.js",
+  "bin": {
+    "pg-logical-replication-to-output": "./src/index.js"
+  },
   "author": "Robert Gebauer",
   "license": "MIT",
   "repository": {
