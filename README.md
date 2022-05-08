@@ -19,6 +19,8 @@ SELECT * FROM pg_create_logical_replication_slot('<Slot Name>', '<Logical Decodi
 * __Slot Name__ is a name that identifies the replication slot and you need to reference it in application configuration
 * __Logical Decoding Plugin__ is the server side plugin for logical decoding. Choose one that is available in your database. A very nice one is [Decoder Raw](https://github.com/michaelpq/pg_plugins/tree/main/decoder_raw) which decodes changes to SQL statement. Whatever the plugin produces - it's what this application pipes to standard output.
 
+Be careful to set a valid REPLICA IDENTITY to retrieve ```update``` and ```delete``` statements. It must be neither ```NOTHING``` nor ```DEFAULT``` without a selectivity index.
+
 ## Application Configuration
 The configuration file is a JSON with following structure
 ```
